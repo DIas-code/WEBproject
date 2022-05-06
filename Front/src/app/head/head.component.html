@@ -1,0 +1,8 @@
+<a routerLink="/home"><h1>Мир Цитат</h1></a>
+<ul class = "noDecoration">
+  <li><a routerLink="/home"> Home </a></li>&nbsp;&nbsp;
+  <li><a routerLink="/about"> About</a></li>&nbsp;&nbsp;&nbsp;
+  <li *ngIf="logged" (click)="logout()">Logout</li>
+  <li *ngIf="!logged" ><a routerLink="/login" *ngIf="!logged">LogIn</a></li>
+
+</ul>

@@ -1,0 +1,9 @@
+<div *ngFor="let c of citatas; let i = index; let first = first ;" class="c">
+  <div *ngIf="first">
+    <h1>{{c.category.name}}</h1>
+  </div>
+</div>
+<div *ngFor="let c of citatas" class="c">
+  <a [routerLink]="['/citata', c.id]"><img src="{{c.content}}"></a>
+  <h4 id="author">{{c.author}}</h4>
+</div>

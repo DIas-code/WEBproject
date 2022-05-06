@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+}
+app-head {
+  width: 100%;
+  height: 68px;
+  background-color: #1976d2;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+app-head ul li{
+  display: inline;
+  /*margin-left: 2%;*/
+  position: relative;
+  right: 20%;
+
+}
+
+app-head h1 {
+  color: white;
+  margin: 0;
+}
+
+h1, h2 {
+  font-weight: lighter;
+}
+
+p {
+  font-size: 14px;
+}
+* {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #616161;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.noDecoration{
+  list-style: none;
+}
