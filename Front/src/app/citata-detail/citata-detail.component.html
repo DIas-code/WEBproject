@@ -1,1 +1,5 @@
-<p>citata-detail works!</p>
+<div *ngFor="let comment of comments; let i = index; let first = first">
+  <div *ngIf="first">
+    <img src="{{comment.}}">
+  </div>
+</div>

@@ -18,6 +18,7 @@ import {AuthInterceptor} from "./authinterceptor";
 import { CategoryDetailComponent } from './category-detail/category-detail.component';
 import { CreatCitataComponent } from './creat-citata/creat-citata.component';
 import { RegisterComponent } from './register/register.component';
+import { NoPgaeComponent } from './no-pgae/no-pgae.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { RegisterComponent } from './register/register.component';
     CommentsComponent,
     CategoryDetailComponent,
     CreatCitataComponent,
-    RegisterComponent
+    RegisterComponent,
+    NoPgaeComponent
   ],
   imports: [
     BrowserModule,

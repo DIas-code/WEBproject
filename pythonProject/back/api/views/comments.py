@@ -31,3 +31,9 @@ class CommentDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
         if request.user != self.get_object().user:
             return Response(status=status.HTTP_403_FORBIDDEN)
         return self.destroy(request, *args, **kwargs)
+
+class CommentsAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Comment.objects.all()
+    permission_classes = (IsAuthenticatedOrReadOnly,)
+    serializer_class = CommentModelSerializer
+

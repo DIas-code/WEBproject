@@ -7,10 +7,10 @@ import {CitataComponent} from "./citata/citata.component";
 import {CitataDetailComponent} from "./citata-detail/citata-detail.component";
 import {CitatacategoryComponent} from "./citatacategory/citatacategory.component";
 
-import { CommentsComponent } from './comments/comments.component';
 import {CategoryDetailComponent} from "./category-detail/category-detail.component";
 import {LoginComponent} from "./login/login.component";
 import {RegisterComponent} from "./register/register.component";
+import {NoPgaeComponent} from "./no-pgae/no-pgae.component";
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -18,12 +18,12 @@ const routes: Routes = [
   {path: 'category', component:CategoryComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
-  {path: 'citata', component: CitataComponent},
   {path: 'citata/:id', component:CitataDetailComponent},
   {path: 'category/:id', component: CategoryDetailComponent},
-  {path: 'comment', component: CommentsComponent},
-  {path: 'cat/:id', component: CitatacategoryComponent},
-  {path: '', redirectTo: 'home', pathMatch: 'full'}
+  // {path: 'comment', component: CommentsComponent},
+  // {path: 'cat/:id', component: CitatacategoryComponent},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: '**', component: NoPgaeComponent}
 ];
 
 @NgModule({

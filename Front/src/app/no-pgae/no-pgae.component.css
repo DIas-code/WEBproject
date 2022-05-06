@@ -1,0 +1,15 @@
+button{
+  border-radius: 6px;
+  background: white;
+  border-color: black;
+  font-size: 120%;
+}
+p{
+  font-size: 200%;
+}
+h1{
+  font-size: 500%;
+}
+div{
+  text-align: center;
+}
